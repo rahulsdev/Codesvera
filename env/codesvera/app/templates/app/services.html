@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Codes Vera</title>
+      {% load static %}
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&display=swap" rel="stylesheet">
+      <link rel='stylesheet' href="{% static 'assets/owl/rYxrEN.css' %}">
+      <link rel='stylesheet' href="{% static 'assets/owl/eezERq.css' %}">
+      <link rel='stylesheet' href="{% static 'assets/owl/owl.carousel.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'assets/css/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+   </head>
+   <style>
+   </style>
+   <!-- <script src="assets/js/jquery.min.js"></script> -->
+   <body>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-fixed-top">
+         <div class="container nav-cover">
+            <a class="navbar-brand" href="#"><img src="{% static 'assets/img/logo.png' %}"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <ul class="navbar-nav ml-auto mobile-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:index' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:about' %}">About Us</a>
+                  </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:services' %}">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:portfolio' %}">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:career' %}">Career</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:contact' %}">Contact us</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <section class="inner-header">
+         <div class="container">
+            <h2>About Us</h2>
+            <ul class="breadcrumb">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About Us</a></li>
+            </ul>
+         </div>
+      </section>
+      <section class="portfolio-cover">
+         <div class="container">
+         <div class="portfolio-head">
+            <h4>What we do?</h4>
+            <h2>SERVICES  we OFFER</h2>
+            <img src="{% static 'assets/img/line.png' %}">
+            <p>
+               Leverage our expertise in enterprise software development, API integration, modernizing legacy systems, and consolidating app portfolios. We help large organizations become a lasting success in the global arena by re-engineering solutions of different complexity.
+               We deliver software products for companies within industries vulnerable to technical disruption. Our process helps companies in large industries define and execute digital transformation strategies.
+            </p>
+            <ul class="weoffer-main">
+               <li>Agriculture </li>
+               <li>Auto</li>
+               <li>Healthcare</li>
+               <li>Insurance</li>
+               <li>Travel</li>
+               <li>Finance</li>
+               <li>Media</li>
+               <li>Utilities</li>
+            </ul>
+         </div>
+      </section>
+      <section class="inner-services">
+         <div class="container">
+            <h3>How can WE help you?</h3>
+            <img src="{% static 'assets/img/line.png' %}">
+            <div class="row main-servicecover">
+               <div class="col-lg-4">
+                  <a href="#" data-toggle="modal" data-target="#web">
+                     <div class="main-services">
+                        <img src="{% static 'assets/img/webdesign-icon.png' %}">
+                        <h4>Web development</h4>
+                        <p>Our web developers dedicate themselves to the highest quality engineering.</p>
+                        <div class="web-arrow">
+                           <img src="{% static 'assets/img/green-arrow.png' %}">
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-4">
+                  <a href="#" data-toggle="modal" data-target="#mob">
+                     <div class="main-services">
+                        <img src="{% static 'assets/img/mob.png' %}">
+                        <h4>Mobile development</h4>
+                        <p>With hundreds of mobile applications under our belt we can practically speak iOS and  </p>
+                        <div class="web-arrow">
+                           <img src="{% static 'assets/img/green-arrow.png' %}">
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-4">
+                  <a href="#" data-toggle="modal" data-target="#ux">
+                     <div class="main-services">
+                        <img src="{% static 'assets/img/ux.png' %}">
+                        <h4>UI/UX Design</h4>
+                        <p>Your products need to bridge the real world with the digital, and we can help. </p>
+                        <div class="web-arrow">
+                           <img src="{% static 'assets/img/green-arrow.png' %}">
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-4">
+                  <a href="#" data-toggle="modal" data-target="#digital">
+                     <div class="main-services">
+                        <img src="{% static 'assets/img/digital-marketing.png' %}">
+                        <h4>Digital Marketing</h4>
+                        <p>We are living in the information age. Studies show that almost 93% of all internet traffic </p>
+                        <div class="web-arrow">
+                           <img src="{% static 'assets/img/green-arrow.png' %}">
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-4">
+                  <a href="#" data-toggle="modal" data-target="#qa">
+                     <div class="main-services">
+                        <img src="{% static 'assets/img/qa.png' %}">
+                        <h4>QA Support</h4>
+                        <p>Expert test engineers are an integral part of every project we work on to ensure</p>
+                        <div class="web-arrow">
+                           <img src="{% static 'assets/img/green-arrow.png' %}">
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="col-lg-4">
+                  <a href="#" data-toggle="modal" data-target="#coporate">
+                     <div class="main-services">
+                        <img src="{% static 'assets/img/corporat.png' %}">
+                        <h4>Corporate Solutions</h4>
+                        <p>As this development is racing forward, many enterprises are facing IT-challenges that</p>
+                        <div class="web-arrow">
+                           <img src="{% static 'assets/img/green-arrow.png' %}">
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="modal" id="web">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Web development</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  Our web developers dedicate themselves to the highest quality engineering. Python, JavaScript frameworks, Ruby, .Net, HTML, CSS and React, Angular and beyond. The team delivers remarkable fully responsive websites that help you outdo your competition. Our web apps boast beauty and brains, with gorgeous design, cutting-edge code, exceptional usability, and conversion strategy built right into each and every one.
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" id="mob">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Mobile development</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  With hundreds of mobile applications under our belt we can practically speak iOS and Android, React native, Phonegap and hybrid development like a first language. One of our principal missions is to create apps that can make a significant impact in the mobile market. Startups and enterprises that partner with us to build mobile applications have continually discovered that their customers are delighted and their applications perform as expected. With the expanding role of technology in business, the right products can help businesses of all size grow.
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" id="ux">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">UI/UX Design</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  Your products need to bridge the real world with the digital, and we can help. Our expertise in user experience design (UX) comes from decades of experience developing apps for clients around the globe and the most aggressive startups. Our experience is your gain, we can help you not only simplify but also to enhance the interaction between your target customers and your digital brand.
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" id="digital">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Digital Marketing</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  We are living in the information age. Studies show that almost 93% of all internet traffic comes from a search engine. Of that search engine traffic, 65%-80% of traffic is commanded by Google. Their ranking process is a mystery but designed to be intuitive. Consider that roughly 75% of users do not scroll beyond the first page when they are searching for anything online. While 81% of businesses consider their blogs to be the most critical SEO asset, they are overlooking thousands of factors that search engines are considering. The web is also evolving with new generations of users. Billions of voice searches are happening around the globe across all devices, and this number will continue to increase. How will your consumer’s intent change with a voice search vs a written search? The answer might surprise you.
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" id="qa">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">QA Support</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  We are living in the information age. Studies show that almost 93% of all internet traffic comes from a search engine. Of that search engine traffic, 65%-80% of traffic is commanded by Google. Their ranking process is a mystery but designed to be intuitive. Consider that roughly 75% of users do not scroll beyond the first page when they are searching for anything online. While 81% of businesses consider their blogs to be the most critical SEO asset, they are overlooking thousands of factors that search engines are considering. The web is also evolving with new generations of users. Billions of voice searches are happening around the globe across all devices, and this number will continue to increase. How will your consumer’s intent change with a voice search vs a written search? The answer might surprise you.
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" id="coporate">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h4 class="modal-title">Corporate Solutions</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  As this development is racing forward, many enterprises are facing IT-challenges that they have never experienced before. We at CodesVera, are here for you to address these challenges. We provide effective business solutions where the customer needs, reducing time-to-market, and innovation exists together. We stick to industry best practices to deliver a higher success rate on projects, with greater efficiency at an affordable cost. Since we understand both business and technology, we can anticipate the outcomes of planned transformation even before the decision is made. We can help you to determine what benefits your business will bring in the long run.
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section>
+         <div class="container">
+            <div class="team-inner">
+               <!-- <h4>OUR PORTFOLIO</h4> -->
+               <h2>OUR TEAM</h2>
+               <!-- <h3 class="top-and-bottom">FOR CLIENT</h3> -->
+               <img src="{% static 'assets/img/line.png' %}">
+               <br>
+            </div>
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <div class="team-cover">
+                     <div class="team-head">
+                     </div>
+                     <div class="team-image">
+                        <img src="{% static 'assets/img/team-1.png' %}">
+                     </div>
+                     <h3>
+                        Romeo Garcia
+                     </h3>
+                     <p>
+                        Developer
+                     </p>
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                                 <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="team-cover">
+                     <div class="team-head">
+                     </div>
+                     <div class="team-image">
+                        <img src="{% static 'assets/img/team-1.png' %}">
+                     </div>
+                     <h3>
+                        Romeo Garcia
+                     </h3>
+                     <p>
+                        Developer
+                     </p>
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                                 <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="team-cover">
+                     <div class="team-head">
+                     </div>
+                     <div class="team-image">
+                        <img src="{% static 'assets/img/team-1.png' %}">
+                     </div>
+                     <h3>
+                        Romeo Garcia
+                     </h3>
+                     <p>
+                        Developer
+                     </p>
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                                 <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <div class="team-cover">
+                     <div class="team-head">
+                     </div>
+                     <div class="team-image">
+                        <img src="{% static 'assets/img/team-1.png' %}">
+                     </div>
+                     <h3>
+                        Romeo Garcia
+                     </h3>
+                     <p>
+                        Developer
+                     </p>
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                                 <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                              </svg>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container client-cover">
+            <div class="about-content">
+               <h2> OUR <span style="font-weight:100">CLIENTS </span></h2>
+               <img src="{% static 'assets/img/line.png' %}">
+            </div>
+            <div class="owl-carousel owl-theme client-inner">
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-1.png' %}">
+               </div>
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-2.png' %}">
+               </div>
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-3.png' %}">
+               </div>
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-4.png' %}">
+               </div>
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-1.png' %}">
+               </div>
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-3.png' %}">
+               </div>
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-4.png' %}">
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-sm-12">
+                  <div class="footer-logo">
+                     <img src="{% static 'assets/img/logo-footer.png' %}">
+                     <p>Door No. 39/2475-b1, Suite127, Lr Towers Sjrra 104, S Janatha Road, Palarivattom Kochi Ernakulam Kl 682025 In</p>
+                     <hr>
+                     <ul>
+                        <a href="mailto:info@codesvera.com">
+                           <li>Email : info@codesvera.com</li>
+                        </a>
+                        <a href="tel:+91 8921162374">
+                           <li>Call Us : +91 8921 162 374</li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2">
+                  <div class="footer-menu">
+                     <h3>Quick Links</h3>
+                     <ul>
+                        <a href="{% url 'app:index' %}">
+                           <li>Home</li>
+                        </a>
+                        <a href="{% url 'app:about' %}">
+                           <li>About Us</li>
+                        </a>
+                        <a href="{% url 'app:portfolio' %}">
+                           <li>Portfolio</li>
+                        </a>
+                        <a href="{% url 'app:career' %}">
+                           <li>Career</li>
+                        </a>
+                        <a href="{% url 'app:contact' %}">
+                           <li>Contact Us</li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                  <div class="footer-menu">
+                     <h3>We are here</h3>
+                     <div>
+                        <img src="{% static 'assets/img/map.png' %}">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-sm-12">
+                  <div class="footer-social">
+                     <h3>Follow Us</h3>
+                     <ul>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/linkedin.png' %}">
+                           </li>
+                        </a>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/instagram.png' %}">
+                           </li>
+                        </a>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/facebook.png' %}">
+                           </li>
+                        </a>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/twitter.png' %}">
+                           </li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <h5>© Copyright2019 - All rights reserved | info@Codesvera .com | Privacy Policy | Terms Of Use</h5>
+         </div>
+      </footer>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="{% static 'assets/js/jquery-3.4.1.slim.min.js' %}"></script>
+      <script src="{% static 'assets/js/popper.min.js' %}"></script>
+      <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'assets/owl/jquery.min.js' %}"></script>
+      <script src="{% static 'assets/owl/rYxrEN.js' %}"></script>
+      <script src="{% static 'assets/owl/owl.carousel.min.js' %}"></script>
+      <script  src="{% static 'assets/owl/script.js' %}"></script>
+      <script>
+         $('.client-inner').owlCarousel({
+           loop:true,
+           margin:10,
+           nav: true,
+            dots:false,
+           navText: ['<img src="{% static "assets/img/left-nav.png" %}">','<img src="{% static "assets/img/right-nav.png" %}">'],
+           responsive:{
+               0:{
+                   items:1
+               },
+               600:{
+                   items:3
+               },
+               1000:{
+                   items:4
+               }
+           }
+         })
+      </script>
+   </body>
+</html>

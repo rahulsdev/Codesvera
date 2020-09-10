@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Codes Vera</title>
+      {% load static %}
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&display=swap" rel="stylesheet">
+      <link rel='stylesheet' href="{% static 'assets/owl/rYxrEN.css' %}">
+      <link rel='stylesheet' href="{% static 'assets/owl/eezERq.css' %}">
+      <link rel='stylesheet' href="{% static 'assets/owl/owl.carousel.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'assets/css/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+   </head>
+   <style>
+      button:focus {
+      outline: none;
+      }
+      input:focus {
+      outline: none;
+      }
+   </style>
+   <!-- <script src="assets/js/jquery.min.js"></script> -->
+   <body>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-fixed-top">
+         <div class="container nav-cover">
+            <a class="navbar-brand" href="#"><img src="{% static 'assets/img/logo.png' %}"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <ul class="navbar-nav ml-auto mobile-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:index' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:about' %}">About Us</a>
+                  </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:services' %}">Services</a>
+                  </li>
+<!--                  <li class="nav-item">-->
+<!--                     <a class="nav-link" href="">Portfolio</a>-->
+<!--                  </li>-->
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:career' %}">Career</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:contact' %}">Contact us</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active">
+               <div class="carousel-caption d-md-block">
+                  <p class="lead">Welcome to our Agency</p>
+                  <h2 class="display-4">CodesVera is passionate Creative Agency</h2>
+                  <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Has been the industry's standard dummy text ever since the 1500s.</h5>
+                  <a href="{% url 'app:about' %}">About Us</a>
+               </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item">
+               <div class="carousel-caption  d-md-block">
+                  <p class="lead" >Meet Our Business</p>
+                  <h2 class="display-4">Partner who Work Behind the Scene.  </h2>
+                  <h5>Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</h5>
+                  <a href="{% url 'app:about' %}">About Us</a>
+               </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item">
+               <div class="carousel-caption  d-md-block">
+                  <p class="lead">We Build </p>
+                  <h2 class="display-4">Awesome Apps That Users Love <br></h2>
+                  <h5>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+                  <a href="{% url 'app:about' %}">About Us</a>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="sr-only">Next</span>
+         </a>
+      </div>
+      <section>
+         <div class="container about-cover">
+            <div class="row">
+               <div class="col-lg-6 col-sm-12 col-xs-12">
+                  <div class="about-image">
+                     <img src="{% static 'assets/img/about-us.png' %}">
+                  </div>
+               </div>
+               <div class="col-lg-6 col-sm-12 col-xs-12">
+                  <div class="about-content">
+                     <h4>Welcome            </h4>
+                     <h2>WE'RE OBLIGED TO </h2>
+                     <h3 class="top-and-bottom">CODE YOUR NEEDS</h3>
+                     <img src="{% static 'assets/img/line.png' %}">
+                     <p>If you are looking for a trustworthy and reputable company to build your operational software or transform your existing systems to the next level, you've found the right company to help.</p>
+                     <ul>
+                        <li>About Us</li>
+                        <p>We love Software, but our purpose goes beyond it. When 4 ambitious and passionate engineers from different professional sectors joined for a purpose led Software Company, CodesVera made its first entrance through Software freelancing. </p>
+                     </ul>
+                     <a href="{% url 'app:about' %}">VIEW MORE</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container">
+         </div>
+      </section>
+      <section class="wedo-cover">
+         <div class="container ">
+            <div class="row">
+               <div class="col-lg-6 col-sm-12 col-xs-12">
+                  <div class="wedo-content">
+                     <h4>What we do?</h4>
+                     <h2>Why choose CodesVera</h2>
+                     <h3 class="top-and-bottom">We're so glad you asked</h3>
+                     <img src="{% static 'assets/img/line.png' %}">
+                     <p>We build software because we love it. Doing what you love for a living is wonderful, and we don’t take it for granted. Being passionate about what we do means we put our heart into it.</p>
+                     <a href="{% url 'app:career' %}">VIEW MORE</a>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-sm-12 col-xs-12">
+                  <div class="wedo-list">
+                     <ul>
+                        <li>
+                           <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <polyline points="12 6 12 12 16 14"></polyline>
+                           </svg>
+                           <h5>24x7 support</h5>
+                        </li>
+                        <li>
+                           <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code">
+                              <polyline points="16 18 22 12 16 6"></polyline>
+                              <polyline points="8 6 2 12 8 18"></polyline>
+                           </svg>
+                           <h5>Reusable codes</h5>
+                        </li>
+                        <li>
+                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#6fb72f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings">
+                              <circle cx="12" cy="12" r="3"></circle>
+                              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                           </svg>
+                           <h5>development</h5>
+                        </li>
+                        <li>
+                           <svg enable-background="new 0 0 24 24" id="Layer_1" version="1.0" viewBox="0 0 24 24" fill="#6fb72f" stroke="#6fb72f"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <path d="M19.8,10.1C18.9,6.6,15.8,4,12,4C9,4,6.4,5.6,5,8.1C2.2,8.6,0,11,0,14c0,3.3,2.7,6,6,6c1,0,11.9,0,13,0c2.8,0,5-2.2,5-5  C24,12.5,22.2,10.4,19.8,10.1z M14,13v4h-4v-4H7l5-5l5,5H14z"/>
+                           </svg>
+                           <h5>deployment</h5>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+<!--      <section class="portfolio-cover">-->
+<!--         <div class="container">-->
+<!--            <div class="portfolio-head">-->
+<!--               <h4>OUR PORTFOLIO</h4>-->
+<!--               <h2>WE DO QUALITY WORK</h2>-->
+<!--               <h3 class="top-and-bottom">FOR CLIENT</h3>-->
+<!--               <img src="{% static 'assets/img/line.png' %}">-->
+<!--               <br>-->
+<!--               <a href="">View All</a>-->
+<!--            </div>-->
+<!--            <div class="owl-carousel owl-carousel-one owl-theme">-->
+<!--               <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">-->
+<!--               <img src="{% static 'assets/img/gallery/1.png' %}" />-->
+<!--               </a>-->
+<!--               <a href="https://source.unsplash.com/A-fubu9QJxE/1500x1000" data-fancybox="images">-->
+<!--               <img src="{% static 'assets/img/gallery/2.png' %}" />-->
+<!--               </a>-->
+<!--               <a href="https://source.unsplash.com/rkkr6-2I4sg/1500x1000" data-fancybox="images">-->
+<!--               <img src="{% static 'assets/img/gallery/3.png' %}" />-->
+<!--               </a>-->
+<!--               <a href="https://source.unsplash.com/mr_Tg4SI66A/1500x1000" data-fancybox="images">-->
+<!--               <img src="{% static 'assets/img/gallery/1.png' %}" />-->
+<!--               </a>-->
+<!--               <a href="https://source.unsplash.com/YEsedBccUEA/1500x1000" data-fancybox="images">-->
+<!--               <img src="{% static 'assets/img/gallery/2.png' %}" />-->
+<!--               </a>-->
+<!--               <a href="https://source.unsplash.com/Hw62tzAkXXE/1500x1000" data-fancybox="images">-->
+<!--               <img src="{% static 'assets/img/gallery/1.png' %}" />-->
+<!--               </a>-->
+<!--               <a href="https://source.unsplash.com/Hw62tzAkXXE/1500x1000" data-fancybox="images">-->
+<!--               <img src="{% static 'assets/img/gallery/1.png' %}" />-->
+<!--               </a>-->
+<!--               <a href="https://source.unsplash.com/mr_Tg4SI66A/1500x1000" data-fancybox="images">-->
+<!--               <img src="{% static 'assets/img/gallery/1.png' %}" />-->
+<!--               </a>-->
+<!--               <a href="https://source.unsplash.com/YEsedBccUEA/1500x1000" data-fancybox="images">-->
+<!--               <img src="{% static 'assets/img/gallery/2.png' %}" />-->
+<!--               </a>-->
+<!--               <a href="https://source.unsplash.com/Hw62tzAkXXE/1500x1000" data-fancybox="images">-->
+<!--               <img src="{% static 'assets/img/gallery/1.png' %}" />-->
+<!--               </a>-->
+<!--               <a href="https://source.unsplash.com/Hw62tzAkXXE/1500x1000" data-fancybox="images">-->
+<!--               <img src="{% static 'assets/img/gallery/1.png' %}" />-->
+<!--               </a>-->
+<!--            </div>-->
+<!--         </div>-->
+<!--      </section>-->
+      <section>
+         <div class="parallax">
+            <div class="container">
+               <div>
+                  <h3>
+                     WE’RE A TEAM OF TALENTED DEVELOPERS & DESIGNERS
+                  </h3>
+                  <h2>How can WE help you?</h2>
+               </div>
+            </div>
+         </div>
+         <div class="container service-cover">
+            <div class=" owl-carousel owl-theme how-can">
+               <div class="overlay-cover">
+                  <div class="service-details" style="background-color: #f5f6fa">
+                     <h3 style="color: #3a97ff">01</h3>
+                     <h5 style="color: #222a35">Web development</h5>
+                     <p style="color: #686868">Our web developers dedicate themselves to the highest quality engineering. Python, JavaScript frameworks, Ruby, .Net, HTML, CSS and React, Angular and beyond.</p>
+                  </div>
+                  <div class="overlay-inner">
+                     <form action="{% url 'app:services' %}">
+                        <input type="submit" value="View more" />
+                     </form>
+                  </div>
+               </div>
+               <div class="overlay-cover">
+                  <div class="service-details" style="background-color: #0167da">
+                     <h3 style="color: #3a97ff">02</h3>
+                     <h5 style="color: #fff">Mobile development</h5>
+                     <p style="color: #fff">With hundreds of mobile applications under our belt we can practically speak iOS and Android, React native, Phonegap and hybrid development ...</p>
+                  </div>
+                  <div class="overlay-inner">
+                     <form action="{% url 'app:services' %}">
+                        <input type="submit" value="View more" />
+                     </form>
+                  </div>
+               </div>
+               <div class="overlay-cover">
+                  <div class="service-details" style="background-color: #222a35">
+                     <h3 style="color: #484a4d">03</h3>
+                     <h5 style="color: #fff">UI/UX Design</h5>
+                     <p style="color: #fff">Your products need to bridge the real world with the digital, and we can help. Our expertise in user experience design (UX) comes from decades ...</p>
+                  </div>
+                  <div class="overlay-inner">
+                     <form action="{% url 'app:services' %}">
+                        <input type="submit" value="View more" />
+                     </form>
+                  </div>
+               </div>
+               <div class="overlay-cover">
+                  <div class="service-details" style="background-color: #6fb72f">
+                     <h3 style="color: #cef9a7">04</h3>
+                     <h5 style="color: #fff">Digital Marketing</h5>
+                     <p style="color: #fff">We are living in the information age. Studies show that almost 93% of all internet traffic comes from a search engine. Of that search engine traffic ...</p>
+                  </div>
+                  <div class="overlay-inner">
+                     <form action="{% url 'app:services' %}">
+                        <input type="submit" value="View more" />
+                     </form>
+                  </div>
+               </div>
+               <div class="overlay-cover">
+                  <div class="service-details" style="background-color: #d6af32f2">
+                     <h3 style="color: #cef9a7">05</h3>
+                     <h5 style="color: #fff">QA Support</h5>
+                     <p style="color: #fff">Expert test engineers are an integral part of every project we work on to ensure deliverables meet the most stringent quality standards ... </p>
+                  </div>
+                  <div class="overlay-inner">
+                     <form action="{% url 'app:services' %}">
+                        <input type="submit" value="View more" />
+                     </form>
+                  </div>
+               </div>
+               <div class="overlay-cover">
+                  <div class="service-details" style="background-color: #ac2fb7">
+                     <h3 style="color: #cef9a7">06</h3>
+                     <h5 style="color: #fff">Corporate Solutions</h5>
+                     <p style="color: #fff">As this development is racing forward, many enterprises are facing IT-challenges that they have never experienced before We at CodesVera ...</p>
+                  </div>
+                  <div class="overlay-inner">
+                     <form action="{% url 'app:services' %}">
+                        <input type="submit" value="View more" />
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container testimonials-cover">
+            <div class="about-content">
+               <h4>TESTIMONIALS</h4>
+               <h2>WHAT OUR <span style="font-weight:100">CLIENTS SAY</span></h2>
+               <img src="{% static 'assets/img/line.png' %}">
+            </div>
+            <div class="owl-carousel owl-carousel-two owl-theme ">
+               <div class="item testimonials-thamb">
+                  <div class="testimonials-images"> 
+                     <img src="/media/client_images/testimonials-1.png">
+                  </div>
+                  <p> Leverage our rich experience for your unique IT & Digital Branding requirements. We are the true engineering company, and a perfect technology partner for your business.
+                  </p>
+                  <div>
+                     <h4> Romeo Garcia</h4>
+                     <h5> Designer</h5>
+                  </div>
+               </div>
+               <div class="item testimonials-thamb">
+                  <div class="testimonials-images"> 
+                     <img src="/media/client_images/testimonials-1.png">
+                  </div>
+                  <p> Leverage our rich experience for your unique IT & Digital Branding requirements. We are the true engineering company, and a perfect technology partner for your business.
+                  </p>
+                  <div>
+                     <h4> Romeo Garcia</h4>
+                     <h5> Designer</h5>
+                  </div>
+               </div>
+               <div class="item testimonials-thamb">
+                  <div class="testimonials-images"> 
+                     <img src="/media/client_images/testimonials-1.png">
+                  </div>
+                  <p>Leverage our rich experience for your unique IT & Digital Branding requirements. We are the true engineering company, and a perfect technology partner for your business.
+
+                  </p>
+                  <div>
+                     <h4> Romeo Garcia</h4>
+                     <h5> Designer</h5>
+                  </div>
+               </div>
+               <div class="item testimonials-thamb">
+                  <div class="testimonials-images"> 
+                     <img src="/media/client_images/testimonials-1.png">
+                  </div>
+                  <p> Leverage our rich experience for your unique IT & Digital Branding requirements. We are the true engineering company, and a perfect technology partner for your business.
+                  </p>
+                  <div>
+                     <h4> Romeo Garcia</h4>
+                     <h5> Designer</h5>
+                  </div>
+               </div>
+               <div class="item testimonials-thamb">
+                  <div class="testimonials-images"> 
+                     <img src="/media/client_images/testimonials-1.png">
+                  </div>
+                  <p> Leverage our rich experience for your unique IT & Digital Branding requirements. We are the true engineering company, and a perfect technology partner for your business.
+                  </p>
+                  <div>
+                     <h4> Romeo Garcia</h4>
+                     <h5> Designer</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="technology-cover">
+         <div class="container">
+            <h4>TECHNOLOGIES WE WORKED WITH</h4>
+            <img src="{% static 'assets/img/black-line.png' %}">
+            <div class="row">
+               <div class="col-lg-2 col-md-4 col-6 technology-logo ">
+                  <img src="{% static 'assets/img/1.png' %}">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 technology-logo ">
+                  <img src="{% static 'assets/img/2.png' %}">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 technology-logo ">
+                  <img src="{% static 'assets/img/3.png' %}">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 technology-logo ">
+                  <img src="{% static 'assets/img/4.png' %}">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 technology-logo ">
+                  <img src="{% static 'assets/img/5.png' %}">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 technology-logo ">
+                  <img src="{% static 'assets/img/6.png' %}">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 technology-logo ">
+                  <img src="{% static 'assets/img/7.png' %}">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 technology-logo ">
+                  <img src="{% static 'assets/img/8.png' %}">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 technology-logo ">
+                  <img src="{% static 'assets/img/9.png' %}">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 technology-logo ">
+                  <img src="{% static 'assets/img/10.png' %}">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 technology-logo ">
+                  <img src="{% static 'assets/img/11.png' %}">
+               </div>
+               <div class="col-lg-2 col-md-4 col-6 technology-logo ">
+                  <img src="{% static 'assets/img/12.png' %}">
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container client-cover">
+            <div class="about-content">
+               <h2> OUR <span style="font-weight:100">CLIENTS </span></h2>
+               <img src="{% static 'assets/img/line.png' %}">
+            </div>
+            <div class="owl-carousel owl-theme client-inner">
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-1.png' %}">
+               </div>
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-2.png' %}">
+               </div>
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-3.png' %}">
+               </div>
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-4.png' %}">
+               </div>
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-1.png' %}">
+               </div>
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-3.png' %}">
+               </div>
+               <div class="item">
+                  <img src="{% static 'assets/img/clients-4.png' %}">
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-sm-12">
+                  <div class="footer-logo">
+                     <img src="{% static 'assets/img/logo-footer.png' %}">
+                     <p>Door No. 39/2475-b1, Suite127, Lr Towers Sjrra 104, S Janatha Road, Palarivattom Kochi Ernakulam Kl 682025 In</p>
+                     <hr>
+                     <ul>
+                        <a href="mailto:info@codesvera.com">
+                           <li>Email : info@codesvera.com</li>
+                        </a>
+                        <a href="tel:+91 8921162374">
+                           <li>Call Us : +91 8921 162 374</li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2">
+                  <div class="footer-menu">
+                     <h3>Quick Links</h3>
+                     <ul>
+                        <a href="{% url 'app:index' %}">
+                           <li>Home</li>
+                        </a>
+                        <a href="{% url 'app:about' %}">
+                           <li>About Us</li>
+                        </a>
+<!--                        <a href="">-->
+<!--                           <li>Portfolio</li>-->
+<!--                        </a>-->
+                        <a href="{% url 'app:career' %}">
+                           <li>Career</li>
+                        </a>
+                        <a href="{% url 'app:contact' %}">
+                           <li>Contact Us</li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                  <div class="footer-menu">
+                     <h3>We are here</h3>
+                     <div>
+                        <img src="{% static 'assets/img/map.png' %}">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-sm-12">
+                  <div class="footer-social">
+                     <h3>Follow Us</h3>
+                     <ul>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/linkedin.png' %}">
+                           </li>
+                        </a>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/instagram.png' %}">
+                           </li>
+                        </a>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/facebook.png' %}">
+                           </li>
+                        </a>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/twitter.png' %}">
+                           </li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <h5>© Copyright2019 - All rights reserved | info@Codesvera .com | Privacy Policy | Terms Of Use</h5>
+         </div>
+      </footer>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="{% static 'assets/js/jquery-3.4.1.slim.min.js' %}"></script>
+      <script src="{% static 'assets/js/popper.min.js' %}"></script>
+      <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'assets/owl/jquery.min.js' %}"></script>
+      <script src="{% static 'assets/owl/rYxrEN.js' %}"></script>
+      <script src="{% static 'assets/owl/owl.carousel.min.js' %}"></script>
+      <script  src="{% static 'assets/owl/script.js' %}"></script>
+      <script>
+         $('.client-inner').owlCarousel({
+           loop:true,
+           margin:10,
+           nav: true,
+           dots:false,
+
+           navText: ['<img src="{% static "assets/img/left-nav.png" %}">','<img src="{% static "assets/img/right-nav.png" %}">'],
+           responsive:{
+               0:{
+                   items:1
+               },
+               600:{
+                   items:3
+               },
+               1000:{
+                   items:4
+               }
+           }
+         })
+         
+         
+         $('.how-can').owlCarousel({
+           loop:true,
+           margin:10,
+           nav: true,
+           autoplay:false,
+           dots:false,
+           navText: ['<img src="{% static "assets/img/left-nav.png" %}">','<img src="{% static "assets/img/right-nav.png" %}">'],
+
+           responsive:{
+               0:{
+                   items:1
+               },
+               600:{
+                   items:3
+               },
+               1000:{
+                   items:4
+               }
+           }
+         })
+         
+         
+         
+      </script>
+   </body>
+</html>

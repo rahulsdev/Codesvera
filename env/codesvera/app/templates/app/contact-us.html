@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Codes Vera</title>
+      {% load static %}
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&display=swap" rel="stylesheet">
+      <link rel='stylesheet' href="{% static 'assets/owl/rYxrEN.css' %}">
+      <link rel='stylesheet' href="{% static 'assets/owl/eezERq.css' %}">
+      <link rel='stylesheet' href="{% static 'assets/owl/owl.carousel.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'assets/css/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+   </head>
+   <style>
+   </style>
+   <!-- <script src="assets/js/jquery.min.js"></script> -->
+   <body>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-fixed-top">
+         <div class="container nav-cover">
+            <a class="navbar-brand" href="#"><img src="{% static 'assets/img/logo.png' %}"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto mobile-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:index' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:about' %}">About Us</a>
+                  </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:services' %}">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:portfolio' %}">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:career' %}">Career</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:contact' %}">Contact us</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <section class="inner-header">
+         <div class="container">
+            <h2>Contact Us</h2>
+            <ul class="breadcrumb">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+         </div>
+      </section>
+      <section class="career-cover">
+         <div class="container">
+            <div class="career-head">
+               <h4>TELL US MORE ABOUT YOUR PROJECT</h4>
+               <h2>LET`S WORK TOGETHER</h2>
+               <!--  <h3 class="top-and-bottom">FOR CLIENT</h3> -->
+               <img src="{% static 'assets/img/line.png' %}">
+            </div>
+            <div class="contact-main">
+               <form>
+                  <div class="row">
+                     <div class="form-group col-lg-6">
+                        <label></label> 
+                        <input id="text" name="text" type="text" placeholder="Name" class="form-control">
+                     </div>
+                     <div class="form-group col-lg-6">
+                        <label for="text1"></label> 
+                        <input id="text1" name="text1" type="text" placeholder="Email" class="form-control">
+                     </div>
+                     <div class="form-group col-lg-12">
+                        <label for=""></label> 
+                        <textarea id="" name="" cols="40" rows="5" placeholder="Message" class="form-control"></textarea>
+                     </div>
+                     <div class="form-group submit-main">
+                        <button name="submit" type="submit" class="btn btn-primary submit-main">Submit</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-sm-12">
+                  <div class="footer-logo">
+                     <img src="{% static 'assets/img/logo-footer.png' %}">
+                     <p>Door No. 39/2475-b1, Suite127, Lr Towers Sjrra 104, S Janatha Road, Palarivattom Kochi Ernakulam Kl 682025 In</p>
+                     <hr>
+                     <ul>
+                        <a href="mailto:info@codesvera.com">
+                           <li>Email : info@codesvera.com</li>
+                        </a>
+                        <a href="tel:+91 8921162374">
+                           <li>Call Us : +91 8921 162 374</li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2">
+                  <div class="footer-menu">
+                     <h3>Quick Links</h3>
+                     <ul>
+                        <a href="{% url 'app:index' %}">
+                           <li>Home</li>
+                        </a>
+                        <a href="{% url 'app:about' %}">
+                           <li>About Us</li>
+                        </a>
+                        <a href="{% url 'app:portfolio' %}">
+                           <li>Portfolio</li>
+                        </a>
+                        <a href="{% url 'app:career' %}">
+                           <li>Career</li>
+                        </a>
+                        <a href="{% url 'app:contact' %}">
+                           <li>Contact Us</li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                  <div class="footer-menu">
+                     <h3>We are here</h3>
+                     <div>
+                        <img src="{% static 'assets/img/map.png' %}">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-sm-12">
+                  <div class="footer-social">
+                     <h3>Follow Us</h3>
+                     <ul>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/linkedin.png' %}">
+                           </li>
+                        </a>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/instagram.png' %}">
+                           </li>
+                        </a>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/facebook.png' %}">
+                           </li>
+                        </a>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/twitter.png' %}">
+                           </li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <h5>© Copyright2019 - All rights reserved | info@Codesvera .com | Privacy Policy | Terms Of Use</h5>
+         </div>
+      </footer>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="{% static 'assets/js/jquery-3.4.1.slim.min.js' %}"></script>
+      <script src="{% static 'assets/js/popper.min.js' %}"></script>
+      <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'assets/owl/jquery.min.js' %}"></script>
+      <script src="{% static 'assets/owl/rYxrEN.js' %}"></script>
+      <script src="{% static 'assets/owl/owl.carousel.min.js' %}"></script>
+      <script  src="{% static 'assets/owl/script.js' %}"></script>
+      <script>
+         $('.client-inner').owlCarousel({
+           loop:true,
+           margin:10,
+           nav: true,
+            dots:false,
+           navText: ['<img src="{% static "assets/img/left-nav.png" %}">','<img src="{% static "assets/img/right-nav.png" %}">'],
+           responsive:{
+               0:{
+                   items:1
+               },
+               600:{
+                   items:3
+               },
+               1000:{
+                   items:4
+               }
+           }
+         })
+      </script>
+   </body>
+</html>

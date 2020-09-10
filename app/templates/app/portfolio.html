@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Codes Vera</title>
+      {% load static %}
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;700;800&display=swap" rel="stylesheet">
+      <link rel='stylesheet' href="{% static 'assets/owl/rYxrEN.css' %}">
+      <link rel='stylesheet' href="{% static 'assets/owl/eezERq.css' %}">
+      <link rel='stylesheet' href="{% static 'assets/owl/owl.carousel.min.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'assets/css/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+   </head>
+   <style>
+      }
+   </style>
+   <!-- <script src="assets/js/jquery.min.js"></script> -->
+   <body>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-fixed-top">
+         <div class="container nav-cover">
+            <a class="navbar-brand" href="#"><img src="{% static 'assets/img/logo.png' %}"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <ul class="navbar-nav ml-auto mobile-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:index' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:about' %}">About Us</a>
+                  </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:services' %}">Services</a>
+                  </li>
+<!--                  <li class="nav-item">-->
+<!--                     <a class="nav-link" href="">Portfolio</a>-->
+<!--                  </li>-->
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:career' %}">Career</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'app:contact' %}">Contact us</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <section class="inner-header">
+         <div class="container">
+            <h2>Portfolio</h2>
+            <ul class="breadcrumb">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Portfolio</a></li>
+            </ul>
+         </div>
+      </section>
+      <section class="career-cover">
+         <div class="container">
+            <div class="career-head">
+               <!-- <h4>OUR PORTFOLIO</h4> -->
+               <h2>WE DO QUALITY WORK</h2>
+               <h3 class="top-and-bottom">FOR CLIENT</h3>
+               <img src="{% static 'assets/img/line.png' %}">
+            </div>
+            <div id="myBtnContainer">
+<!--               <button class="btn active" onclick="filterSelection('all')"> Show all</button>-->
+
+               <form action="{% url 'app:portfolio' web.id%}"><button class="btn active" onclick="filterSelection('cars')"> Website</button></form>
+               <button class="btn" onclick="filterSelection('animals')"> Android</button>
+               <button class="btn" onclick="filterSelection('fruits')"> Ios</button>
+               <button class="btn" onclick="filterSelection('colors')"> Web App</button>
+            </div>
+            <div class="inner-portfolio row">
+               <div class="col-lg-3 col-sm-6 portfolio-thamb filterDiv cars">
+                  <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">
+                  <img src="/media/portfolio_images/1.png" />
+                  </a>
+               </div>
+               <div class="col-lg-3 col-sm-6 portfolio-thamb filterDiv cars">
+                  <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">
+                  <img src="/media/portfolio_images/2.png" />
+                  </a>
+               </div>
+               <div class="col-lg-3 col-sm-6 portfolio-thamb filterDiv colors">
+                  <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">
+                  <img src="/media/portfolio_images/3.png" />
+                  </a>
+               </div>
+               <div class="col-lg-3 col-sm-6 portfolio-thamb filterDiv cars animals">
+                  <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">
+                  <img src="/media/portfolio_images/4.png" />
+                  </a>
+               </div>
+               <div class="col-lg-3 col-sm-6 portfolio-thamb filterDiv fruits">
+                  <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">
+                  <img src="/media/portfolio_images/1.png" />
+                  </a>
+               </div>
+               <div class="col-lg-3 col-sm-6 portfolio-thamb filterDiv cars">
+                  <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">
+                  <img src="/media/portfolio_images/2.png" />
+                  </a>
+               </div>
+               <div class="col-lg-3 col-sm-6 portfolio-thamb filterDiv colors">
+                  <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">
+                  <img src="/media/portfolio_images/4.png" />
+                  </a>
+               </div>
+               <div class="col-lg-3 col-sm-6 portfolio-thamb filterDiv cars">
+                  <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">
+                  <img src="/media/portfolio_images/3.png" />
+                  </a>
+               </div>
+               <div class="col-lg-3 col-sm-6 portfolio-thamb filterDiv colors">
+                  <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">
+                  <img src="/media/portfolio_images/1.png" />
+                  </a>
+               </div>
+               <div class="col-lg-3 col-sm-6 portfolio-thamb filterDiv cars">
+                  <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">
+                  <img src="/media/portfolio_images/4.png" />
+                  </a>
+               </div>
+               <div class="col-lg-3 col-sm-6 portfolio-thamb filterDiv cars">
+                  <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">
+                  <img src="/media/portfolio_images/2.png" />
+                  </a>
+               </div>
+               <div class="col-lg-3 col-sm-6 portfolio-thamb filterDiv colors">
+                  <a href="https://source.unsplash.com/ndjyaOp0fOc/1500x1000" data-fancybox="images">
+                  <img src="/media/portfolio_images/1.png" />
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container">
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-sm-12">
+                  <div class="footer-logo">
+                     <img src="{% static 'assets/img/logo-footer.png' %}">
+                     <p>Door No. 39/2475-b1, Suite127, Lr Towers Sjrra 104, S Janatha Road, Palarivattom Kochi Ernakulam Kl 682025 In</p>
+                     <hr>
+                     <ul>
+                        <a href="mailto:info@codesvera.com">
+                           <li>Email : info@codesvera.com</li>
+                        </a>
+                        <a href="tel:+91 8921162374">
+                           <li>Call Us : +91 8921 162 374</li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2">
+                  <div class="footer-menu">
+                     <h3>Quick Links</h3>
+                     <ul>
+                        <a href="{% url 'app:index' %}">
+                           <li>Home</li>
+                        </a>
+                        <a href="{% url 'app:about' %}">
+                           <li>About Us</li>
+                        </a>
+<!--                        <a href="">-->
+<!--                           <li>Portfolio</li>-->
+<!--                        </a>-->
+                        <a href="{% url 'app:career' %}">
+                           <li>Career</li>
+                        </a>
+                        <a href="{% url 'app:contact' %}">
+                           <li>Contact Us</li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-sm-12">
+                  <div class="footer-menu">
+                     <h3>We are here</h3>
+                     <div>
+                        <img src="{% static 'assets/img/map.png' %}">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-sm-12">
+                  <div class="footer-social">
+                     <h3>Follow Us</h3>
+                     <ul>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/linkedin.png' %}">
+                           </li>
+                        </a>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/instagram.png' %}">
+                           </li>
+                        </a>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/facebook.png' %}">
+                           </li>
+                        </a>
+                        <a href="#">
+                           <li>
+                              <img src="{% static 'assets/img/twitter.png' %}">
+                           </li>
+                        </a>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <h5>© Copyright2019 - All rights reserved | info@Codesvera .com | Privacy Policy | Terms Of Use</h5>
+         </div>
+      </footer>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="{% static 'assets/js/jquery-3.4.1.slim.min.js' %}"></script>
+      <script src="{% static 'assets/js/popper.min.js' %}"></script>
+      <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'assets/owl/jquery.min.js' %}"></script>
+      <script src="{% static 'assets/owl/rYxrEN.js' %}"></script>
+      <script src="{% static 'assets/owl/owl.carousel.min.js' %}"></script>
+      <script  src="{% static 'assets/owl/script.js' %}"></script>
+      <script>
+         $('.client-inner').owlCarousel({
+           loop:true,
+           margin:10,
+           nav: true,
+            dots:false,
+           navText: ['<img src="{% static "assets/img/left-nav.png" %}">','<img src="{% static "assets/img/right-nav.png" %}">'],
+           responsive:{
+               0:{
+                   items:1
+               },
+               600:{
+                   items:3
+               },
+               1000:{
+                   items:4
+               }
+           }
+         })
+      </script>
+      <script>
+         filterSelection("all")
+         function filterSelection(c) {
+           var x, i;
+           x = document.getElementsByClassName("filterDiv");
+           if (c == "all") c = "";
+           for (i = 0; i < x.length; i++) {
+             w3RemoveClass(x[i], "show");
+             if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+           }
+         }
+         
+         function w3AddClass(element, name) {
+           var i, arr1, arr2;
+           arr1 = element.className.split(" ");
+           arr2 = name.split(" ");
+           for (i = 0; i < arr2.length; i++) {
+             if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+           }
+         }
+         
+         function w3RemoveClass(element, name) {
+           var i, arr1, arr2;
+           arr1 = element.className.split(" ");
+           arr2 = name.split(" ");
+           for (i = 0; i < arr2.length; i++) {
+             while (arr1.indexOf(arr2[i]) > -1) {
+               arr1.splice(arr1.indexOf(arr2[i]), 1);     
+             }
+           }
+           element.className = arr1.join(" ");
+         }
+         
+         // Add active class to the current button (highlight it)
+         var btnContainer = document.getElementById("myBtnContainer");
+         var btns = btnContainer.getElementsByClassName("btn");
+         for (var i = 0; i < btns.length; i++) {
+           btns[i].addEventListener("click", function(){
+             var current = document.getElementsByClassName("active");
+             current[0].className = current[0].className.replace(" active", "");
+             this.className += " active";
+           });
+         }
+      </script>
+   </body>
+</html>
